@@ -1,0 +1,389 @@
+2021-04-30 18:44:35,947 : INFO : Logicallog : Number added: 
+2021-04-30 18:44:35,948 : INFO : Logicallog : 95
+2021-04-30 18:44:43,975 : INFO : Logicallog : Number added: 
+2021-04-30 18:44:43,975 : INFO : Logicallog : 96
+2021-04-30 18:44:47,919 : INFO : Logicallog : Number added: 
+2021-04-30 18:44:47,919 : INFO : Logicallog : 45
+2021-04-30 18:44:51,527 : INFO : Logicallog : generated coupon: 
+2021-04-30 18:44:51,527 : INFO : Logicallog : 89
+2021-04-30 18:44:51,527 : INFO : Logicallog : Coupon set is:
+2021-04-30 18:44:54,814 : INFO : Logicallog : generated coupon: 
+2021-04-30 18:44:54,814 : INFO : Logicallog : 70
+2021-04-30 18:44:54,814 : INFO : Logicallog : Coupon set is:
+2021-04-30 18:44:57,887 : INFO : Logicallog : generated coupon: 
+2021-04-30 18:44:57,888 : INFO : Logicallog : 67
+2021-04-30 18:44:57,888 : INFO : Logicallog : Coupon set is:
+2021-04-30 18:45:04,968 : INFO : Logicallog : {89, 67, 70}
+2021-04-30 18:48:57,401 : INFO : Logicallog : Time Lapsed = 0:0:4
+2021-04-30 18:51:09,128 : INFO : Logicallog :    |     |   
+2021-04-30 18:51:09,128 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:09,128 : INFO : Logicallog :    |     |   
+2021-04-30 18:51:09,128 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:09,128 : INFO : Logicallog :    |     |   
+2021-04-30 18:51:09,128 : INFO : Logicallog : It's your turn,XEnter the number between 1 to 9 :
+2021-04-30 18:51:18,578 : INFO : Logicallog :    |     |   
+2021-04-30 18:51:18,578 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:18,579 : INFO : Logicallog :    |     |   
+2021-04-30 18:51:18,579 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:18,579 : INFO : Logicallog :    |  X  |   
+2021-04-30 18:51:18,579 : INFO : Logicallog : It's your turn,OEnter the number between 1 to 9 :
+2021-04-30 18:51:21,661 : INFO : Logicallog : That place is already filled.
+Move to which place?
+2021-04-30 18:51:21,661 : INFO : Logicallog :    |     |   
+2021-04-30 18:51:21,661 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:21,662 : INFO : Logicallog :    |     |   
+2021-04-30 18:51:21,662 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:21,662 : INFO : Logicallog :    |  X  |   
+2021-04-30 18:51:21,662 : INFO : Logicallog : It's your turn,OEnter the number between 1 to 9 :
+2021-04-30 18:51:24,087 : INFO : Logicallog :    |     |   
+2021-04-30 18:51:24,087 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:24,087 : INFO : Logicallog :    |     |   
+2021-04-30 18:51:24,087 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:24,087 : INFO : Logicallog :    |  X  |  O
+2021-04-30 18:51:24,087 : INFO : Logicallog : It's your turn,XEnter the number between 1 to 9 :
+2021-04-30 18:51:26,164 : INFO : Logicallog :    |     |   
+2021-04-30 18:51:26,165 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:26,165 : INFO : Logicallog : X  |     |   
+2021-04-30 18:51:26,166 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:26,166 : INFO : Logicallog :    |  X  |  O
+2021-04-30 18:51:26,166 : INFO : Logicallog : It's your turn,OEnter the number between 1 to 9 :
+2021-04-30 18:51:28,959 : INFO : Logicallog :    |     |   
+2021-04-30 18:51:28,959 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:28,959 : INFO : Logicallog : X  |  O  |   
+2021-04-30 18:51:28,959 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:28,959 : INFO : Logicallog :    |  X  |  O
+2021-04-30 18:51:28,960 : INFO : Logicallog : It's your turn,XEnter the number between 1 to 9 :
+2021-04-30 18:51:30,753 : INFO : Logicallog : That place is already filled.
+Move to which place?
+2021-04-30 18:51:30,754 : INFO : Logicallog :    |     |   
+2021-04-30 18:51:30,754 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:30,754 : INFO : Logicallog : X  |  O  |   
+2021-04-30 18:51:30,754 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:30,754 : INFO : Logicallog :    |  X  |  O
+2021-04-30 18:51:30,754 : INFO : Logicallog : It's your turn,XEnter the number between 1 to 9 :
+2021-04-30 18:51:32,658 : INFO : Logicallog : That place is already filled.
+Move to which place?
+2021-04-30 18:51:32,658 : INFO : Logicallog :    |     |   
+2021-04-30 18:51:32,658 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:32,658 : INFO : Logicallog : X  |  O  |   
+2021-04-30 18:51:32,658 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:32,659 : INFO : Logicallog :    |  X  |  O
+2021-04-30 18:51:32,659 : INFO : Logicallog : It's your turn,XEnter the number between 1 to 9 :
+2021-04-30 18:51:34,577 : INFO : Logicallog :    |     |   
+2021-04-30 18:51:34,577 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:34,577 : INFO : Logicallog : X  |  O  |   
+2021-04-30 18:51:34,577 : INFO : Logicallog : -  +  -  +  -
+2021-04-30 18:51:34,578 : INFO : Logicallog : X  |  X  |  O
+2021-04-30 18:51:34,578 : INFO : Logicallog : It's your turn,OEnter the number between 1 to 9 :
+2021-04-30 18:51:36,698 : INFO : Logicallog : That place is already filled.
+Move to which place?
+2021-04-30 18:52:22,116 : INFO : Logicallog : Number added: 
+2021-04-30 18:52:22,116 : INFO : Logicallog : 9
+2021-05-01 06:32:49,782 : INFO : Logicallog :    |     |   
+2021-05-01 06:32:49,809 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 06:32:49,809 : INFO : Logicallog :    |     |   
+2021-05-01 06:32:49,809 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 06:32:49,809 : INFO : Logicallog :    |     |   
+2021-05-01 06:32:49,809 : INFO : Logicallog : It's your turn,XEnter the number between 1 to 9 :
+2021-05-01 06:33:19,936 : INFO : Logicallog : Time Lapsed = 0:0:6
+2021-05-01 06:33:52,677 : INFO : Logicallog : Number added: 
+2021-05-01 06:33:52,677 : INFO : Logicallog : 78
+2021-05-01 06:33:55,476 : INFO : Logicallog : generated coupon: 
+2021-05-01 06:33:55,476 : INFO : Logicallog : 78
+2021-05-01 06:33:55,476 : INFO : Logicallog : Coupon set is:
+2021-05-01 11:21:25,116 : INFO : Logicallog : win percentage is: 
+2021-05-01 11:21:25,134 : INFO : Logicallog : 54.47227191413238
+2021-05-01 11:21:25,134 : INFO : Logicallog : Loss percentage is: 
+2021-05-01 11:21:25,135 : INFO : Logicallog : 45.52772808586762
+2021-05-01 11:21:44,260 : INFO : Logicallog : win percentage is: 
+2021-05-01 11:21:44,261 : INFO : Logicallog : 50.43630017452007
+2021-05-01 11:21:44,261 : INFO : Logicallog : Loss percentage is: 
+2021-05-01 11:21:44,261 : INFO : Logicallog : 49.56369982547993
+2021-05-01 11:22:33,788 : INFO : Logicallog : number of wins: 
+2021-05-01 11:22:33,789 : INFO : Logicallog : 1048
+2021-05-01 11:22:33,790 : INFO : Logicallog : win percentage is: 
+2021-05-01 11:22:33,790 : INFO : Logicallog : 47.72313296903461
+2021-05-01 11:22:33,790 : INFO : Logicallog : Loss percentage is: 
+2021-05-01 11:22:33,790 : INFO : Logicallog : 52.27686703096539
+2021-05-01 17:04:51,893 : INFO : Logicallog : Number added: 
+2021-05-01 17:04:51,894 : INFO : Logicallog : 54
+2021-05-01 17:04:57,208 : INFO : Logicallog : Number added: 
+2021-05-01 17:04:57,208 : INFO : Logicallog : 45
+2021-05-01 17:05:00,069 : INFO : Logicallog : Number added: 
+2021-05-01 17:05:00,069 : INFO : Logicallog : 65
+2021-05-01 17:05:20,444 : INFO : Logicallog : Number added: 
+2021-05-01 17:05:20,444 : INFO : Logicallog : 5
+2021-05-01 17:05:23,943 : INFO : Logicallog : Number added: 
+2021-05-01 17:05:23,943 : INFO : Logicallog : 6
+2021-05-01 17:05:29,140 : INFO : Logicallog : number already exists, enter different number
+2021-05-01 17:05:29,140 : INFO : Logicallog : Number added: 
+2021-05-01 17:05:29,140 : INFO : Logicallog : 6
+2021-05-01 17:05:54,224 : INFO : Logicallog : Number added: 
+2021-05-01 17:05:54,225 : INFO : Logicallog : 5
+2021-05-01 17:05:56,998 : INFO : Logicallog : Number added: 
+2021-05-01 17:05:56,998 : INFO : Logicallog : 6
+2021-05-01 17:05:58,604 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:05:58,604 : INFO : Logicallog : 6
+2021-05-01 17:05:58,605 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:06:11,358 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:06:11,358 : INFO : Logicallog : 5
+2021-05-01 17:06:11,358 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:06:19,545 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:06:19,545 : INFO : Logicallog : 5
+2021-05-01 17:06:19,545 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:06:24,585 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:06:24,586 : INFO : Logicallog : 5
+2021-05-01 17:06:24,587 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:06:30,862 : INFO : Logicallog : Number added: 
+2021-05-01 17:06:30,862 : INFO : Logicallog : 9
+2021-05-01 17:06:33,370 : INFO : Logicallog : Number added: 
+2021-05-01 17:06:33,370 : INFO : Logicallog : 6
+2021-05-01 17:06:47,256 : INFO : Logicallog : Number added: 
+2021-05-01 17:06:47,256 : INFO : Logicallog : 4
+2021-05-01 17:06:50,799 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:06:50,799 : INFO : Logicallog : 6
+2021-05-01 17:06:50,799 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:06:54,100 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:06:54,100 : INFO : Logicallog : 5
+2021-05-01 17:06:54,101 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:06:59,214 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:06:59,214 : INFO : Logicallog : 8
+2021-05-01 17:06:59,214 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:07:07,203 : INFO : Logicallog : {8, 5, 6}
+2021-05-01 17:07:48,262 : INFO : Logicallog : Number added: 
+2021-05-01 17:07:48,263 : INFO : Logicallog : 6
+2021-05-01 17:07:51,259 : INFO : Logicallog : Number added: 
+2021-05-01 17:07:51,259 : INFO : Logicallog : 2
+2021-05-01 17:08:01,066 : INFO : Logicallog : Number added: 
+2021-05-01 17:08:01,067 : INFO : Logicallog : 4
+2021-05-01 17:08:10,137 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:08:10,137 : INFO : Logicallog : 4
+2021-05-01 17:08:10,137 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:08:43,482 : INFO : Logicallog : Number added: 
+2021-05-01 17:08:43,483 : INFO : Logicallog : 6
+2021-05-01 17:08:44,733 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:08:44,733 : INFO : Logicallog : 6
+2021-05-01 17:08:44,733 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:08:51,802 : INFO : Logicallog : Number added: 
+2021-05-01 17:08:51,803 : INFO : Logicallog : 1
+2021-05-01 17:08:56,134 : INFO : Logicallog : Number added: 
+2021-05-01 17:08:56,134 : INFO : Logicallog : 5
+2021-05-01 17:08:59,627 : INFO : Logicallog : Number added: 
+2021-05-01 17:08:59,628 : INFO : Logicallog : 9
+2021-05-01 17:09:12,959 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:09:12,959 : INFO : Logicallog : 3
+2021-05-01 17:09:12,960 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:09:21,115 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:09:21,115 : INFO : Logicallog : 3
+2021-05-01 17:09:21,115 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:09:24,513 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:09:24,513 : INFO : Logicallog : 5
+2021-05-01 17:09:24,513 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:09:26,878 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:09:26,878 : INFO : Logicallog : 5
+2021-05-01 17:09:26,879 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:09:28,241 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:09:28,241 : INFO : Logicallog : 1
+2021-05-01 17:09:28,241 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:09:29,542 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:09:29,542 : INFO : Logicallog : 2
+2021-05-01 17:09:29,542 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:09:30,775 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:09:30,775 : INFO : Logicallog : 8
+2021-05-01 17:09:30,775 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:09:32,692 : INFO : Logicallog : {1, 2, 3, 5, 8}
+2021-05-01 17:09:40,616 : INFO : Logicallog : Number added: 
+2021-05-01 17:09:40,617 : INFO : Logicallog : 6
+2021-05-01 17:09:43,048 : INFO : Logicallog : Number added: 
+2021-05-01 17:09:43,048 : INFO : Logicallog : 5
+2021-05-01 17:10:13,077 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:10:13,078 : INFO : Logicallog : 6
+2021-05-01 17:10:13,079 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:10:18,672 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:10:18,672 : INFO : Logicallog : 6
+2021-05-01 17:10:18,672 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:10:23,174 : INFO : Logicallog : generated coupon: 
+2021-05-01 17:10:23,174 : INFO : Logicallog : 5
+2021-05-01 17:10:23,174 : INFO : Logicallog : Coupon set is:
+2021-05-01 17:10:25,714 : INFO : Logicallog : {5, 6}
+2021-05-01 17:10:39,526 : INFO : Logicallog : number of wins: 
+2021-05-01 17:10:39,526 : INFO : Logicallog : 3903
+2021-05-01 17:10:39,526 : INFO : Logicallog : win percentage is: 
+2021-05-01 17:10:39,526 : INFO : Logicallog : 49.36756893498609
+2021-05-01 17:10:39,526 : INFO : Logicallog : Loss percentage is: 
+2021-05-01 17:10:39,526 : INFO : Logicallog : 50.63243106501391
+2021-05-01 17:12:21,491 : INFO : Logicallog : number of wins: 
+2021-05-01 17:12:21,491 : INFO : Logicallog : 1003
+2021-05-01 17:12:21,491 : INFO : Logicallog : win percentage is: 
+2021-05-01 17:12:21,491 : INFO : Logicallog : 47.62583095916429
+2021-05-01 17:12:21,491 : INFO : Logicallog : Loss percentage is: 
+2021-05-01 17:12:21,491 : INFO : Logicallog : 52.37416904083571
+2021-05-01 17:12:37,849 : INFO : Logicallog : Time Lapsed = 0:0:5
+2021-05-01 17:12:47,266 : INFO : Logicallog :    |     |   
+2021-05-01 17:12:47,266 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:12:47,266 : INFO : Logicallog :    |     |   
+2021-05-01 17:12:47,266 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:12:47,266 : INFO : Logicallog :    |     |   
+2021-05-01 17:12:47,266 : INFO : Logicallog : It's your turn,XEnter the number between 1 to 9 :
+2021-05-01 17:12:55,375 : INFO : Logicallog :    |     |   
+2021-05-01 17:12:55,375 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:12:55,375 : INFO : Logicallog :    |  X  |   
+2021-05-01 17:12:55,376 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:12:55,376 : INFO : Logicallog :    |     |   
+2021-05-01 17:12:55,376 : INFO : Logicallog : It's your turn,OEnter the number between 1 to 9 :
+2021-05-01 17:12:58,246 : INFO : Logicallog :    |     |   
+2021-05-01 17:12:58,247 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:12:58,247 : INFO : Logicallog : O  |  X  |   
+2021-05-01 17:12:58,248 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:12:58,248 : INFO : Logicallog :    |     |   
+2021-05-01 17:12:58,248 : INFO : Logicallog : It's your turn,XEnter the number between 1 to 9 :
+2021-05-01 17:13:00,099 : INFO : Logicallog :    |     |   
+2021-05-01 17:13:00,099 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:13:00,100 : INFO : Logicallog : O  |  X  |   
+2021-05-01 17:13:00,100 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:13:00,100 : INFO : Logicallog :    |  X  |   
+2021-05-01 17:13:00,100 : INFO : Logicallog : It's your turn,OEnter the number between 1 to 9 :
+2021-05-01 17:13:02,138 : INFO : Logicallog : That place is already filled.
+Move to which place?
+2021-05-01 17:13:02,138 : INFO : Logicallog :    |     |   
+2021-05-01 17:13:02,138 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:13:02,138 : INFO : Logicallog : O  |  X  |   
+2021-05-01 17:13:02,138 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:13:02,139 : INFO : Logicallog :    |  X  |   
+2021-05-01 17:13:02,139 : INFO : Logicallog : It's your turn,OEnter the number between 1 to 9 :
+2021-05-01 17:13:05,936 : INFO : Logicallog :    |  O  |   
+2021-05-01 17:13:05,937 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:13:05,937 : INFO : Logicallog : O  |  X  |   
+2021-05-01 17:13:05,937 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:13:05,937 : INFO : Logicallog :    |  X  |   
+2021-05-01 17:13:05,937 : INFO : Logicallog : It's your turn,XEnter the number between 1 to 9 :
+2021-05-01 17:13:16,289 : INFO : Logicallog :    |  O  |   
+2021-05-01 17:13:16,289 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:13:16,289 : INFO : Logicallog : O  |  X  |   
+2021-05-01 17:13:16,289 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:13:16,289 : INFO : Logicallog : X  |  X  |   
+2021-05-01 17:13:16,290 : INFO : Logicallog : It's your turn,OEnter the number between 1 to 9 :
+2021-05-01 17:13:19,850 : INFO : Logicallog : O  |  O  |   
+2021-05-01 17:13:19,850 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:13:19,850 : INFO : Logicallog : O  |  X  |   
+2021-05-01 17:13:19,851 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:13:19,851 : INFO : Logicallog : X  |  X  |   
+2021-05-01 17:13:19,851 : INFO : Logicallog : It's your turn,XEnter the number between 1 to 9 :
+2021-05-01 17:13:22,455 : INFO : Logicallog : O  |  O  |  X
+2021-05-01 17:13:22,455 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:13:22,455 : INFO : Logicallog : O  |  X  |   
+2021-05-01 17:13:22,456 : INFO : Logicallog : -  +  -  +  -
+2021-05-01 17:13:22,456 : INFO : Logicallog : X  |  X  |   
+2021-05-01 17:13:22,456 : INFO : Logicallog : 
+Game Over.
+
+2021-05-01 17:13:22,456 : INFO : Logicallog :  **** X won. ****
+2021-05-03 09:48:06,359 : INFO : Logicallog : Number added: 
+2021-05-03 09:48:06,360 : INFO : Logicallog : 5
+2021-05-03 09:48:11,343 : INFO : Logicallog : Number added: 
+2021-05-03 09:48:11,343 : INFO : Logicallog : 4
+2021-05-03 09:48:18,003 : INFO : Logicallog : Number added: 
+2021-05-03 09:48:18,003 : INFO : Logicallog : 6
+2021-05-03 09:48:19,782 : INFO : Logicallog : generated coupon: 
+2021-05-03 09:48:19,783 : INFO : Logicallog : 6
+2021-05-03 09:48:19,783 : INFO : Logicallog : Coupon set is:
+2021-05-03 09:48:23,089 : INFO : Logicallog : generated coupon: 
+2021-05-03 09:48:23,089 : INFO : Logicallog : 6
+2021-05-03 09:48:23,089 : INFO : Logicallog : Coupon set is:
+2021-05-03 09:48:25,665 : INFO : Logicallog : generated coupon: 
+2021-05-03 09:48:25,665 : INFO : Logicallog : 6
+2021-05-03 09:48:25,665 : INFO : Logicallog : Coupon set is:
+2021-05-03 09:48:28,083 : INFO : Logicallog : generated coupon: 
+2021-05-03 09:48:28,083 : INFO : Logicallog : 5
+2021-05-03 09:48:28,083 : INFO : Logicallog : Coupon set is:
+2021-05-03 09:48:31,487 : INFO : Logicallog : generated coupon: 
+2021-05-03 09:48:31,487 : INFO : Logicallog : 6
+2021-05-03 09:48:31,487 : INFO : Logicallog : Coupon set is:
+2021-05-03 09:48:33,891 : INFO : Logicallog : {5, 6}
+2021-05-03 09:48:48,900 : INFO : Logicallog : number of wins: 
+2021-05-03 09:48:48,900 : INFO : Logicallog : 2344
+2021-05-03 09:48:48,900 : INFO : Logicallog : win percentage is: 
+2021-05-03 09:48:48,900 : INFO : Logicallog : 48.955722639933164
+2021-05-03 09:48:48,900 : INFO : Logicallog : Loss percentage is: 
+2021-05-03 09:48:48,900 : INFO : Logicallog : 51.044277360066836
+2021-05-03 09:49:04,606 : INFO : Logicallog : Time Lapsed = 0:0:6
+2021-05-03 09:49:23,605 : INFO : Logicallog :    |     |   
+2021-05-03 09:49:23,605 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 09:49:23,605 : INFO : Logicallog :    |     |   
+2021-05-03 09:49:23,605 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 09:49:23,605 : INFO : Logicallog :    |     |   
+2021-05-03 09:49:23,605 : INFO : Logicallog : It's your turn,XEnter the number between 1 to 9 :
+2021-05-03 09:49:30,990 : INFO : Logicallog :    |     |   
+2021-05-03 09:49:30,990 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 09:49:30,990 : INFO : Logicallog :    |     |   
+2021-05-03 09:49:30,990 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 09:49:30,991 : INFO : Logicallog :    |  X  |   
+2021-05-03 09:49:30,991 : INFO : Logicallog : It's your turn,OEnter the number between 1 to 9 :
+2021-05-03 09:49:50,334 : INFO : Logicallog :    |     |   
+2021-05-03 09:49:50,334 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 09:49:50,334 : INFO : Logicallog :    |     |  O
+2021-05-03 09:49:50,334 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 09:49:50,334 : INFO : Logicallog :    |  X  |   
+2021-05-03 09:49:50,335 : INFO : Logicallog : It's your turn,XEnter the number between 1 to 9 :
+2021-05-03 09:49:55,314 : INFO : Logicallog :    |     |   
+2021-05-03 09:49:55,314 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 09:49:55,314 : INFO : Logicallog :    |  X  |  O
+2021-05-03 09:49:55,314 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 09:49:55,315 : INFO : Logicallog :    |  X  |   
+2021-05-03 09:49:55,315 : INFO : Logicallog : It's your turn,OEnter the number between 1 to 9 :
+2021-05-03 09:50:02,552 : INFO : Logicallog :    |  O  |   
+2021-05-03 09:50:02,553 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 09:50:02,553 : INFO : Logicallog :    |  X  |  O
+2021-05-03 09:50:02,553 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 09:50:02,553 : INFO : Logicallog :    |  X  |   
+2021-05-03 09:50:02,553 : INFO : Logicallog : It's your turn,XEnter the number between 1 to 9 :
+2021-05-03 09:50:12,664 : INFO : Logicallog :    |  O  |   
+2021-05-03 09:50:12,664 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 09:50:12,664 : INFO : Logicallog :    |  X  |  O
+2021-05-03 09:50:12,664 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 09:50:12,664 : INFO : Logicallog :    |  X  |  X
+2021-05-03 09:50:12,665 : INFO : Logicallog : It's your turn,OEnter the number between 1 to 9 :
+2021-05-03 09:50:16,699 : INFO : Logicallog :    |  O  |  O
+2021-05-03 09:50:16,701 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 09:50:16,701 : INFO : Logicallog :    |  X  |  O
+2021-05-03 09:50:16,701 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 09:50:16,701 : INFO : Logicallog :    |  X  |  X
+2021-05-03 09:50:16,701 : INFO : Logicallog : It's your turn,XEnter the number between 1 to 9 :
+2021-05-03 09:50:21,705 : INFO : Logicallog :    |  O  |  O
+2021-05-03 09:50:21,705 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 09:50:21,705 : INFO : Logicallog :    |  X  |  O
+2021-05-03 09:50:21,705 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 09:50:21,706 : INFO : Logicallog : X  |  X  |  X
+2021-05-03 09:50:21,706 : INFO : Logicallog : 
+Game Over.
+
+2021-05-03 09:50:21,706 : INFO : Logicallog :  **** X won. ****
+2021-05-03 11:41:15,704 : INFO : Logicallog : Number added: 
+2021-05-03 11:41:15,704 : INFO : Logicallog : 2
+2021-05-03 11:41:21,083 : INFO : Logicallog : Number added: 
+2021-05-03 11:41:21,084 : INFO : Logicallog : 4
+2021-05-03 11:41:27,653 : INFO : Logicallog : Number added: 
+2021-05-03 11:41:27,654 : INFO : Logicallog : 9
+2021-05-03 11:41:32,706 : INFO : Logicallog : generated coupon: 
+2021-05-03 11:41:32,707 : INFO : Logicallog : 3
+2021-05-03 11:41:32,707 : INFO : Logicallog : Coupon set is:
+2021-05-03 11:41:41,496 : INFO : Logicallog : generated coupon: 
+2021-05-03 11:41:41,496 : INFO : Logicallog : 4
+2021-05-03 11:41:41,496 : INFO : Logicallog : Coupon set is:
+2021-05-03 11:41:44,892 : INFO : Logicallog : generated coupon: 
+2021-05-03 11:41:44,892 : INFO : Logicallog : 7
+2021-05-03 11:41:44,892 : INFO : Logicallog : Coupon set is:
+2021-05-03 11:41:46,274 : INFO : Logicallog : {3, 4, 7}
+2021-05-03 11:41:55,611 : INFO : Logicallog : number of wins: 
+2021-05-03 11:41:55,611 : INFO : Logicallog : 6783
+2021-05-03 11:41:55,611 : INFO : Logicallog : win percentage is: 
+2021-05-03 11:41:55,611 : INFO : Logicallog : 50.37130551017377
+2021-05-03 11:41:55,611 : INFO : Logicallog : Loss percentage is: 
+2021-05-03 11:41:55,611 : INFO : Logicallog : 49.62869448982623
+2021-05-03 11:42:09,363 : INFO : Logicallog : Time Lapsed = 0:0:3
+2021-05-03 11:42:28,588 : INFO : Logicallog :    |     |   
+2021-05-03 11:42:28,588 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 11:42:28,588 : INFO : Logicallog :    |     |   
+2021-05-03 11:42:28,588 : INFO : Logicallog : -  +  -  +  -
+2021-05-03 11:42:28,588 : INFO : Logicallog :    |     |   
+2021-05-03 11:42:28,588 : INFO : Logicallog : It's your turn,XEnter the number between 1 to 9 :
