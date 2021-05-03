@@ -1,10 +1,19 @@
 """
-date = '21/04/2021'
-modified_date = '22/04/2021'
-author = 'Vishnu'
-description = ' A library for reading in 2D arrays of integers, doubles, or booleans from standard input and printing them out to standard output.'
+@date = '21/04/2021'
+@modified_date = '22/04/2021'
+@author = 'Vishnu'
+@Title = ' A library for reading in 2D arrays of integers, doubles, or booleans from standard input and printing them out to standard output.'
 """
+import logging
+from Functionslog import logger
+logger.setLevel(logging.INFO)
 def PrintArray(Rows, Columns):
+
+    """
+    Description:
+    :We are defining the function as PrintArray
+    parameters:
+    :in side passing two variables like Rows and Columns."""
     array1 = []
     print("Enter the entries row wise:")
 
@@ -18,9 +27,11 @@ def PrintArray(Rows, Columns):
     # For printing the array
     for i in range(Rows):
         for j in range(Columns):
-            print(array1[i][j], end=" ")
-        print()
+            logger.info(array1[i])
+            logger.info(array[j])
+        logger.info()
 try:
+    #Here passing matrix or index(3x3)
     PrintArray(3, 3)
 except Exception as e:
-    print(e)
+    logger.info(e)

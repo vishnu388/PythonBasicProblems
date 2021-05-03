@@ -1,25 +1,26 @@
 """
-date = '20/04/2021'
-modified_date = '21/04/2021'
-author = 'vishnu'
-description = 'Power of 2 '
+@date = '20/04/2021'
+@modified_date = '21/04/2021'
+@author = 'vishnu'
+@Title = 'Power of 2 '
 """
+import math
+import logging
+from Basiclogger import logger
+logger.setLevel(logging.INFO)
+"""
+Description:
+:we are define function as power
+Parameters:
+:in that function we are assign the input like integer format."""
+try:
 
-class Powerof2:
-	def power(self):
-		print("Enter the N value :")
-		N = int(input())
-		num=0
-		# as per the given condition the resultant should be less than 2^31
-		if 0<= N and N<31:
-			if N==0:
-				print("2 * ", N, " = ", num)
-			for i in range(1, N):
-				num = pow(2, i)
-				if num <=(pow(2, N)):
-					# Printing the table of two powers
-					print("2 pow ", i, " = ", num)
-		else:
-			print("Given number should be less than 31")
-powr = Powerof2()
-powr.power()
+	N = int(input('enter number from 1 to 31: '))
+	if N > 31 and N >= 0:
+		print('please enter number from 1 to 31')
+	else:
+		for i in range(N):
+			result = pow(2, i)
+			logger.info(result)
+except Exception as e:
+	logger.info(e)
