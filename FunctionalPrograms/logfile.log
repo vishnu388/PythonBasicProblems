@@ -1,0 +1,27 @@
+
+2021-05-03 09:46:42,889 : INFO : Functionslog : ['1', '2', '3']
+2021-05-03 09:46:42,895 : INFO : Functionslog : name 'array' is not defined
+2021-05-03 09:47:02,819 : INFO : Functionslog : 10.816653826391969
+2021-05-03 09:47:13,725 : INFO : Functionslog : (-0.3333333333333333+0.6666666666666666j)
+2021-05-03 09:47:13,725 : INFO : Functionslog : (-0.3333333333333333-0.6666666666666666j)
+2021-05-03 09:47:23,848 : INFO : Functionslog : 0
+2021-05-03 09:47:23,848 : INFO : Functionslog : -1
+2021-05-03 09:47:23,848 : INFO : Functionslog : 1
+2021-05-03 09:47:23,848 : INFO : Functionslog : 2
+2021-05-03 09:47:23,848 : INFO : Functionslog : -3
+2021-05-03 09:47:23,848 : INFO : Functionslog : 1
+2021-05-03 09:47:36,392 : INFO : Functionslog : calculated windchill is: 
+2021-05-03 09:47:36,392 : INFO : Functionslog : 28.67786111659946
+2021-05-03 11:39:47,848 : INFO : Functionslog : ['1', '2', '3']
+2021-05-03 11:39:47,848 : INFO : Functionslog : name 'array' is not defined
+2021-05-03 11:40:13,661 : INFO : Functionslog : 7.810249675906654
+2021-05-03 11:40:26,034 : INFO : Functionslog : (-0.3125+0.16535945694153692j)
+2021-05-03 11:40:26,034 : INFO : Functionslog : (-0.3125-0.16535945694153692j)
+2021-05-03 11:40:34,633 : INFO : Functionslog : 0
+2021-05-03 11:40:34,633 : INFO : Functionslog : -1
+2021-05-03 11:40:34,633 : INFO : Functionslog : 1
+2021-05-03 11:40:34,633 : INFO : Functionslog : 2
+2021-05-03 11:40:34,633 : INFO : Functionslog : -3
+2021-05-03 11:40:34,633 : INFO : Functionslog : 1
+2021-05-03 11:40:53,144 : INFO : Functionslog : calculated windchill is: 
+2021-05-03 11:40:53,144 : INFO : Functionslog : 7.717302677428954
