@@ -1,0 +1,85 @@
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| address_book1      |
+| addressbookdb      |
+| connectionsqldb    |
+| demo_rfp006        |
+| information_schema |
+| mysql              |
+| payroll_service1   |
+| performance_schema |
+| pets               |
+| python             |
+| pythondb           |
+| sys                |
+| vishnudb           |
++--------------------+
+13 rows in set (0.00 sec)
+
+mysql> use pythondb;
+Database changed
+mysql> select database();
++------------+
+| database() |
++------------+
+| pythondb   |
++------------+
+1 row in set (0.00 sec)
+
+mysql> describe studentdata;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| studentId   | int          | NO   | PRI | NULL    |       |
+| studentName | varchar(150) | YES  |     | NULL    |       |
+| phone       | varchar(50)  | YES  |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+3 rows in set (0.17 sec)
+
+mysql> select * from studentdata;
++-----------+-------------+------------+
+| studentId | studentName | phone      |
++-----------+-------------+------------+
+|        11 | Vishnu      | 8106261925 |
+|        12 | Kiran       | 9989988301 |
+|        13 | Ashok       | 966646639  |
+|        14 | Jagan       | 9666466639 |
+|        15 | Ajay        | 9701560019 |
++-----------+-------------+------------+
+5 rows in set (0.00 sec)
+
+mysql> select * from studentdata;
++-----------+-------------+------------+
+| studentId | studentName | phone      |
++-----------+-------------+------------+
+|        11 | Vishnu      | 8106261925 |
+|        12 | Kiran       | 9989988301 |
+|        13 | Ashok       | 966646639  |
+|        14 | Jagan       | 9666466639 |
+|        15 | Ajay        | 9701560019 |
++-----------+-------------+------------+
+5 rows in set (0.00 sec)
+
+mysql> select * from studentdata;
++-----------+-------------+------------+
+| studentId | studentName | phone      |
++-----------+-------------+------------+
+|        11 | Vishnu      | 8106261925 |
+|        12 | Kiran       | 9989988301 |
+|        14 | Jagan       | 9666466639 |
+|        15 | Ajay        | 9701560019 |
++-----------+-------------+------------+
+4 rows in set (0.00 sec)
+
+mysql> select * from studentdata;
++-----------+-------------+------------+
+| studentId | studentName | phone      |
++-----------+-------------+------------+
+|        11 | Vishnu      | 8106261925 |
+|        12 | Kiran       | 9989988301 |
+|        14 | Ashok       | 9666466639 |
+|        15 | Ajay        | 9701560019 |
++-----------+-------------+------------+
+4 rows in set (0.10 sec)
