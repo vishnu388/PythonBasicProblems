@@ -3,4 +3,4 @@ from decouple import config
 print(config("user"))
 print(config("passwd"))
 print(config("host"))
-print(os.environ.get("user"))
+#print(os.environ.get("user"))
