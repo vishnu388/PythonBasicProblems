@@ -15,27 +15,27 @@ class CRUD:
 
         query = 'create table if not exists studentdata(studentId int primary key, studentName varchar(150),phone varchar(50))'
 
-        cur = self.con.cursor()
+        cur = self.con.cursor()#cursor() method create a cursor object
 
-        cur.execute(query)
+        cur.execute(query)#Execute SQL Query to create a table into your database
 
         print("Created..")
-        # insert
 
+    # insert
     def insert(self, studentId, studentName, phone):
         query = "insert into studentdata(studentId,studentName,phone) values ({},'{}','{}')".format(studentId, studentName,
                                                                                                 phone)
         print(query)
-        cur = self.con.cursor()
-        cur.execute(query)
-        self.con.commit()
+        cur = self.con.cursor()#cursor() method create a cursor object
+        cur.execute(query)#Execute SQL Query to create a table into your database
+        self.con.commit()# Commit is used for your changes in the database  
         print("Data inserted on DB Successfully...")
 
     # Select
     def select(self):
         query = "select *from studentdata"
-        cur = self.con.cursor()
-        cur.execute(query)
+        cur = self.con.cursor()#cursor() method create a cursor object
+        cur.execute(query)#Execute SQL Query to create a table into your database
         for row in cur:
             print("studentId : ", row[0])
             print("studentName : ", row[1])
@@ -45,9 +45,9 @@ class CRUD:
     def delete(self, studentId):
         query = "delete from studentdata where studentId = {}".format(studentId)
         print(query)
-        c = self.con.cursor()
-        c.execute(query)
-        self.con.commit()
+        c = self.con.cursor()#cursor() method create a cursor object
+        c.execute(query)#Execute SQL Query to create a table into your database
+        self.con.commit()# Commit is used for your changes in the database  
         print("Deleted Successfully....")
 
     # Update Query
@@ -55,9 +55,9 @@ class CRUD:
         query = "update studentdata set studentName = '{}', phone = '{}' where studentId = {}".format(newName, newPhone,
                                                                                                       studentId)
         print(query)
-        c = self.con.cursor()
-        c.execute(query)
-        self.con.commit()
+        c = self.con.cursor()#cursor() method create a cursor object
+        c.execute(query)#Execute SQL Query to create a table into your database 
+        self.con.commit()# Commit is used for your changes in the database  
         print("Updated Successfully...")
 
 
