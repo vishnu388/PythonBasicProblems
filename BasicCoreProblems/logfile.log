@@ -98,3 +98,24 @@
 2021-05-03 11:38:58,867 : INFO : Basiclogger : 8388608
 2021-05-03 11:38:58,867 : INFO : Basiclogger : 16777216
 2021-05-03 11:39:10,829 : INFO : Basiclogger : Hello vishnu, How are you?
+2021-05-03 14:48:11,488 : INFO : Basiclogger : 2
+2021-05-03 14:48:11,488 : INFO : Basiclogger : 3.0
+2021-05-03 16:18:30,079 : INFO : Basiclogger : 2
+2021-05-03 16:18:30,079 : INFO : Basiclogger : 3.0
+2021-05-03 16:19:14,556 : INFO : Basiclogger : 50.0
+2021-05-03 16:19:14,557 : INFO : Basiclogger : 50.0
+2021-05-04 11:10:50,928 : INFO : Basiclogger : 2
+2021-05-04 11:10:50,944 : INFO : Basiclogger : 3.0
+2021-05-04 13:33:20,718 : INFO : Basiclogger : 1.0
+2021-05-04 13:33:20,728 : INFO : Basiclogger : 1.5
+2021-05-04 13:33:20,728 : INFO : Basiclogger : 1.8333333333333333
+2021-05-04 13:33:20,728 : INFO : Basiclogger : 2.083333333333333
+2021-05-04 13:33:20,728 : INFO : Basiclogger : 2.283333333333333
+2021-05-04 13:33:20,728 : INFO : Basiclogger : 2.4499999999999997
+2021-05-04 13:33:20,728 : INFO : Basiclogger : 2.5928571428571425
+2021-05-04 13:33:20,728 : INFO : Basiclogger : 2.7178571428571425
+2021-05-04 13:33:20,728 : INFO : Basiclogger : 2.8289682539682537
+2021-05-04 13:35:39,774 : INFO : Basiclogger : 3
+2021-05-04 13:35:39,775 : INFO : Basiclogger : 3
+2021-05-05 07:13:09,444 : INFO : Basiclogger : 3
+2021-05-05 07:13:09,586 : INFO : Basiclogger : 3
