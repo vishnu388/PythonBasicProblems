@@ -3,39 +3,43 @@ Author - vishnu.
 Date - 05/05/2021
 Title - Chat Application using socket programming(One server and multiple clients).
 """
+
+
 import socket
-from _thread import *
-class server:
-    def connection(self):
-        ServerSocket = socket.socket()
-        host = '127.0.0.1'
-        port = 1233
-        ThreadCount = 0
-        try:
-            ServerSocket.bind((host, port))
-        except socket.error as e:
-            print(str(e))
+import threading  #To handle multiple clients
+IP = '127.0.0.1' # Standard loopback interface address (localhost)
+PORT = 1233      # Port to listen on (non-privileged ports are > 1023)
+ADDRESS = (IP, PORT)
+SIZE = 1024      #BufferSize
+FORMAT = "utf-8"
+DISCONNECT_MSG = "!DISCONNECT"
 
-        print('Waiting for a Connection..')
-        ServerSocket.listen(5)
+def handle_client(connection, address):
+    print(f"[NEW CONNECTION] {address} connected.")
+    connected = True
+    while connected:
+        msg = connection.recv(SIZE).decode(FORMAT)
+        if msg == DISCONNECT_MSG:
+            connected = False
+        else:
+            print(f"[{address}] {msg}")
+            msg = f"MSG received: {msg}"
+            connection.send(msg.encode(FORMAT))
+    connection.close()
+
+def main():
+    print("[STARTING] server is starting..")
+    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server.bind(ADDRESS)
+    server.listen()
+    print(f"[LISTENING] Server is listening on {IP}:{PORT}")
+
+    while True:
+        connection, address = server.accept()
+        thread = threading.Thread(target=handle_client, args=(connection, address))
+        thread.start()
+        print(f"[ACTIVE CONNECTIONS] {threading.activeCount() -1}")
 
 
-        def threaded_client(connection):
-            connection.send(str.encode('Welcome to the Server'))
-            while True:
-                data = connection.recv(2048)
-                reply = 'Server Says: ' + data.decode('utf-8')
-                if not data:
-                    break
-                connection.sendall(str.encode(reply))
-            connection.close()
-
-        while True:
-            Client, address = ServerSocket.accept()
-            print('Connected to: ' + address[0] + ':' + str(address[1]))
-            start_new_thread(threaded_client, (Client, ))
-            ThreadCount += 1
-            print('Thread Number: ' + str(ThreadCount))
-        ServerSocket.close()
-connect = server()
-connect.connection()
+if __name__ == "__main__":
+    main()

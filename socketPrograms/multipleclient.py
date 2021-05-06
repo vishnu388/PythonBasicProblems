@@ -3,26 +3,28 @@ Author - vishnu.
 Date - 05/05/2021
 Title - Chat Application using socket programming(One server and multiple clients).
 """
-
+from decouple import config
 import socket
-class client:
-    def connection(self):
-        ClientSocket = socket.socket()
-        host = '127.0.0.1'
-        port = 1233
-        print('Waiting for connection')
-        try:
-            ClientSocket.connect((host, port))
-        except socket.error as e:
-            print(str(e))
+IP = '127.0.0.1'  # Standard loopback interface address (localhost)
+PORT = 1233       # Port to listen on (non-privileged ports are > 1023)
+ADDRESS = (IP, PORT)
+SIZE = 1024       #BufferSize
+FORMAT = "utf-8"
+DISCONNECT_MSG = "!DISCONNECT"
+def main():
+    client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    client.connect(ADDRESS)
+    print(f"[CONNECTED] Client connected to server at {IP}:{PORT}")
+    connected = True
+    while connected:
+        msg = input(">")
+        client.send(msg.encode(FORMAT))
 
-        Response = ClientSocket.recv(1024)
-        while True:
-            Input = input('Say Something: ')
-            ClientSocket.send(str.encode(Input))
-            Response = ClientSocket.recv(1024)
-            print(Response.decode('utf-8'))
+        if msg == DISCONNECT_MSG:
+            connected = False
+        else:
+            msg = client.recv(SIZE).decode(FORMAT)
+            print(f"[SERVER] {msg}")
 
-        ClientSocket.close()
-connect=client()
-connect.connection()
+if __name__ =="__main__":
+    main()

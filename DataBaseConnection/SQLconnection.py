@@ -3,7 +3,7 @@ Author: vishnu
 Date: 04/05/2021
 Title: Perform CRUD Operations
 """
-
+from decouple import config
 import mysql.connector as connector
 import logging
 from database import logger
@@ -11,31 +11,27 @@ logger.setLevel(logging.INFO)
 
 class CRUD:
     def __init__(self):
-        self.con = connector.connect(host='localhost', user='root', password='Vishnu@388', database='pythondb')
-
+        self.con = connector.connect(host=config('host'), user=config('user'), password=config('password'), database=config('database'))
         query = 'create table if not exists studentdata(studentId int primary key, studentName varchar(150),phone varchar(50))'
-
-        cur = self.con.cursor()#cursor() method create a cursor object
-
-        cur.execute(query)#Execute SQL Query to create a table into your database
-
+        cursor = self.con.cursor()#cursor() method create a cursor object
+        cursor.execute(query)#Execute SQL Query to create a table into your database
         print("Created..")
 
     # insert
     def insert(self, studentId, studentName, phone):
-        query = "insert into studentdata(studentId,studentName,phone) values ({},'{}','{}')".format(studentId, studentName,
-                                                                                                phone)
+        query = "insert into studentdata(studentId,studentName,phone) values ({},'{}','{}')".format(studentId, studentName, phone)
+                                                                                                
         print(query)
-        cur = self.con.cursor()#cursor() method create a cursor object
-        cur.execute(query)#Execute SQL Query to create a table into your database
-        self.con.commit()# Commit is used for your changes in the database  
+        cursor = self.con.cursor()#cursor() method create a cursor object
+        cursor.execute(query)#Execute SQL Query to create a table into your database
+        self.con.commit()# Commit is used for your changes in the database
         print("Data inserted on DB Successfully...")
 
     # Select
     def select(self):
         query = "select *from studentdata"
-        cur = self.con.cursor()#cursor() method create a cursor object
-        cur.execute(query)#Execute SQL Query to create a table into your database
+        cursor = self.con.cursor()#cursor() method create a cursor object
+        cursor.execute(query)#Execute SQL Query to create a table into your database
         for row in cur:
             print("studentId : ", row[0])
             print("studentName : ", row[1])
@@ -45,9 +41,9 @@ class CRUD:
     def delete(self, studentId):
         query = "delete from studentdata where studentId = {}".format(studentId)
         print(query)
-        c = self.con.cursor()#cursor() method create a cursor object
-        c.execute(query)#Execute SQL Query to create a table into your database
-        self.con.commit()# Commit is used for your changes in the database  
+        cursor = self.con.cursor()#cursor() method create a cursor object
+        cursor.execute(query)#Execute SQL Query to create a table into your database
+        self.con.commit()# Commit is used for your changes in the database
         print("Deleted Successfully....")
 
     # Update Query
@@ -55,9 +51,9 @@ class CRUD:
         query = "update studentdata set studentName = '{}', phone = '{}' where studentId = {}".format(newName, newPhone,
                                                                                                       studentId)
         print(query)
-        c = self.con.cursor()#cursor() method create a cursor object
-        c.execute(query)#Execute SQL Query to create a table into your database 
-        self.con.commit()# Commit is used for your changes in the database  
+        cursor = self.con.cursor()#cursor() method create a cursor object
+        cursor.execute(query)#Execute SQL Query to create a table into your database
+        self.con.commit()# Commit is used for your changes in the database
         print("Updated Successfully...")
 
 
@@ -70,4 +66,4 @@ if __name__ == '__main__':
     #operations.insert(15, "Ajay", "9701560019")
     #operations.select()
     #operations.delete(13)
-    operations.update(14, "Ashok", "9666466639")
+    #operations.update(14, "Ashok", "9666466639")
