@@ -6,40 +6,51 @@ Title - Chat Application using socket programming(One server and multiple client
 
 
 import socket
-import threading  #To handle multiple clients
-IP = '127.0.0.1' # Standard loopback interface address (localhost)
-PORT = 1233      # Port to listen on (non-privileged ports are > 1023)
-ADDRESS = (IP, PORT)
-SIZE = 1024      #BufferSize
-FORMAT = "utf-8"
-DISCONNECT_MSG = "!DISCONNECT"
+import threading
 
-def handle_client(connection, address):
-    print(f"[NEW CONNECTION] {address} connected.")
-    connected = True
-    while connected:
-        msg = connection.recv(SIZE).decode(FORMAT)
-        if msg == DISCONNECT_MSG:
-            connected = False
-        else:
-            print(f"[{address}] {msg}")
-            msg = f"MSG received: {msg}"
-            connection.send(msg.encode(FORMAT))
-    connection.close()
+host = '127.0.0.1'
+port = 55555
 
-def main():
-    print("[STARTING] server is starting..")
-    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server.bind(ADDRESS)
-    server.listen()
-    print(f"[LISTENING] Server is listening on {IP}:{PORT}")
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server.bind((host, port))
+server.listen()
 
+clients = []
+nicknames = []
+
+def broadcast(message):
+    for client in clients:
+        client.send(message)
+
+def handle(client):
     while True:
-        connection, address = server.accept()
-        thread = threading.Thread(target=handle_client, args=(connection, address))
+        try:
+            message = client.recv(1024)
+            broadcast(message)
+        except:
+            index = clients.index(client)
+            clients.remove(client)
+            client.close()
+            nickname = nicknames[index]
+            broadcast(f'{nickname} left the chat!'.encode('utf-8'))
+            nicknames.remove(nickname)
+            break
+
+def receive():
+    while True:
+        client, address = server.accept()
+        print(f"connected with {str(address)}")
+        client.send('NICK'.encode('utf-8'))
+        nickname = client.recv(1024).decode('utf-8')
+        nicknames.append(nickname)
+        clients.append(client)
+
+        print(f'NICKname of the client is {nickname}!')
+        broadcast(f'{nickname} joined the chat!'.encode('utf-8'))
+        client.send('connected to the server!'.encode('utf-8'))
+
+        thread = threading.Thread(target=handle, args=(client,))
         thread.start()
-        print(f"[ACTIVE CONNECTIONS] {threading.activeCount() -1}")
 
-
-if __name__ == "__main__":
-    main()
+print("server is listening...")
+receive()
