@@ -3,36 +3,40 @@ Author - vishnu.
 Date - 05/05/2021
 Title - Chat Application using socket programming(One server and multiple clients).
 """
+
 import socket
-import threading
+import pickle  # Create portable serialized representations of Python objects.
+import threading  # Thread module emulating a subset of Java's threading model.
+
+client = socket.socket(socket.AF_INET,
+                       socket.SOCK_STREAM)  # AF_INET- address family IPV4 and SOCK_STREAM-Connection oriented i.e TCP/IP
+
+client.connect(('localhost', 9026))
+
+message = client.recv(1024).decode()
+print("The message from server: ", message)
+name = input("Please provide your name: ")
+
+client.send(bytes(name, "utf-8"))
+message = client.recv(1024).decode()
+print("Message from server: ", message)
 
 
-host = '127.0.0.1'
-port = 55555
-nickname = input("choose a nickname:")
-client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect((host, port))
+def NewChatMessage():
+    message = client.recv(1024)
+    print(message)
 
-def receive():
-    while True:
-        try:
-            message = client.recv(1024).decode('utf-8')
-            if message == 'NICK':
-                client.send(nickname.encode('utf-8'))
-            else:
-                print(message)
-        except:
-            print("An error occurred!")
-            client.close()
-            break
 
-def write():
-    while True:
-        message = f'{nickname}: {input("")}'
-        client.send(message.encode('utf-8'))
+aStarted = False
 
-receive_thread = threading.Thread(target=receive)
-receive_thread.start()
+# while message.lower().strip() != 'bye':
+while True:
+    if aStarted == False:
+        threading._start_new_thread(NewChatMessage, ())
+        bStarted = True
 
-write_thread = threading.Thread(target=write)
-write_thread.start()
+    message = input("Your Message: ")
+    to = input("Send To: ")
+    msgToSend = [message, to]
+    messagePickle = pickle.dumps(msgToSend)  # loads Deserialize data stream  and dumps() - Serialize object
+    client.send(messagePickle)

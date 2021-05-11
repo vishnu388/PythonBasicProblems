@@ -9,6 +9,11 @@ import logging
 from database import logger
 logger.setLevel(logging.INFO)
 
+"""
+in this operation we connect pycharm to mysql database
+here we are passing variables operation like insert, update and Delete operations
+"""
+
 class CRUD:
     def __init__(self):
         self.con = connector.connect(host=config('host'), user=config('user'), password=config('password'), database=config('database'))

@@ -3,8 +3,8 @@ from decouple import config
 #print(config("user"))
 #print(config("password"))
 #print(config("host"))
-print(config("IP"))
+#print(config("IP"))
 #print(config("database"))
-#print(config("port"))
-
+#print(config("PORT"))
+print(config("HOST"))
 #print(os.environ.get("user"))

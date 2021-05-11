@@ -6,13 +6,14 @@ Title - Socket programming simple program (Connection and print hello message).
 
 import socket
 import logging
+from decouple import config
 from socketlogger import logger
 logger.setLevel(logging.INFO)
 
 class server:
     def connection(self):
-        HOST = '127.0.0.1'  # Standard loopback interface address (localhost)
-        PORT = 64323       # Port to listen on (non-privileged ports are > 1023)
+        HOST = config('HOST')  # Standard loopback interface address (localhost)
+        PORT = config('PORT')     # Port to listen on (non-privileged ports are > 1023)
 
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:    
             s.bind((HOST, PORT))

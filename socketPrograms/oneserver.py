@@ -4,53 +4,85 @@ Date - 05/05/2021
 Title - Chat Application using socket programming(One server and multiple clients).
 """
 
-
 import socket
-import threading
+import threading  # """Thread module emulating a subset of Java's threading model."""
+import pickle  # Create portable serialized representations of Python objects.
+import mysql.connector
+import datetime
+import time
 
-host = '127.0.0.1'
-port = 55555
+connectedlist = []  # Store data in the list
 
-server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server.bind((host, port))
-server.listen()
+serversocket = socket.socket(socket.AF_INET,
+                             socket.SOCK_STREAM)  # AF_INET- address family IPV4 and SOCK_STREAM-Connection oriented i.e TCP/IP
+print("Opened the server socket to listen to new connections")
+print("server socket....", serversocket)
+print(dir(serversocket))
 
-clients = []
-nicknames = []
+ret = serversocket.bind(('localhost', 9026))
+print("Bind to the local port", ret)
 
-def broadcast(message):
-    for client in clients:
-        client.send(message)
+serversocket.listen(5)
+print("Started listening to the local port ")
 
-def handle(client):
+server_start_time = time.time()
+session_time_stamp = datetime.datetime.fromtimestamp(server_start_time).strftime("%Y-%m-%d %H:%M:%S")
+print("Server Start Time...", session_time_stamp)
+auto_increment = 0
+
+
+def chatbackup(clientname, message, cursor):
+    # mySql_insert_query = """"
+    global auto_increment
+    # global session_time_stamp
+    auto_increment += 1
+    values = (auto_increment, clientname, message)
+
+    cursor.execute("INSERT INTO client1_client2data (clientId, clientName, message) VALUES (%s, %s, %s) ", values)
+    connection.commit()
+    print("Record inserted successfully into chatserver table")
+    # cursor.close()
+
+
+def NewChatClient(client, ip, cursor):
     while True:
-        try:
-            message = client.recv(1024)
-            broadcast(message)
-        except:
-            index = clients.index(client)
-            clients.remove(client)
-            client.close()
-            nickname = nicknames[index]
-            broadcast(f'{nickname} left the chat!'.encode('utf-8'))
-            nicknames.remove(nickname)
-            break
+        message = client.recv(1024)
+        messagepickle = pickle.loads(message)  # loads()- Deserialize data stream  and dumps()-Serialize object
 
-def receive():
+        print(messagepickle[0])  # Actual message send from one cleint to another
+        chatbackup(messagepickle[1], messagepickle[0], cursor)
+        print(messagepickle[1])  # name of the client who send the msg
+
+        for l1 in connectedlist:
+            if l1[0] == messagepickle[1]:  # check name of the client is available or not
+                l1[1].send(bytes(messagepickle[0], "utf-8"))  # send the msg to other client
+                break
+
+
+try:
+    connection = mysql.connector.connect(host='localhost',
+                                         database='clientchatdb',
+                                         user='root',
+                                         port='3306',
+                                         password='Vishnu@388')
+    cursor = connection.cursor()
+    print("Print.....", cursor)
     while True:
-        client, address = server.accept()
-        print(f"connected with {str(address)}")
-        client.send('NICK'.encode('utf-8'))
-        nickname = client.recv(1024).decode('utf-8')
-        nicknames.append(nickname)
-        clients.append(client)
+        clientsocket, ip = serversocket.accept()
+        print("New client connected from: ", ip)
 
-        print(f'NICKname of the client is {nickname}!')
-        broadcast(f'{nickname} joined the chat!'.encode('utf-8'))
-        client.send('connected to the server!'.encode('utf-8'))
+        clientsocket.send(bytes("Connected", "utf-8"))
 
-        thread = threading.Thread(target=handle, args=(client,))
-        thread.start()
+        # Get the client name
+        clientname = clientsocket.recv(1024).decode()
+        nameclientpair = [clientname, clientsocket]
+        connectedlist.append(nameclientpair)
+        clientsocket.send(bytes("Enable for chat", "utf-8"))
 
-print("server is listening...")
-receive()
+        threading._start_new_thread(NewChatClient, (clientsocket, ip, cursor))
+
+except Exception as e:
+    print("Exception is ...................", e)
+
+finally:
+    cursor.close()
